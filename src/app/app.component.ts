@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MonitorsPageComponent } from "./pages/monitors-page/monitors-page.component";
 
 @Component({
   selector: 'app-root',
-  imports: [BrowserModule,HeaderComponent, FooterComponent, FormsModule],
+  imports: [HeaderComponent, FooterComponent, MonitorsPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

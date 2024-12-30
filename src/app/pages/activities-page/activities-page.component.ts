@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivityCardComponent } from '../../activity-card/activity-card.component';
 import { ActivitiesService } from '../../services/activities.service';
+
 @Component({
   selector: 'app-activities-page',
   standalone: true,
