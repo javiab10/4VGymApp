@@ -1,1 +1,23 @@
-<p>activities-page works!</p>
+
+<div class="container mt-4">
+    <h2>Gestión de Actividades</h2>
+  
+    <div class="d-flex justify-content-between align-items-center my-3">
+      <button class="btn btn-outline-secondary">&lt;</button>
+      <input type="date" class="form-control w-25" [(ngModel)]="selectedDate">
+      <button class="btn btn-outline-secondary">&gt;</button>
+    </div>
+
+    <div class="row">
+      <div class="col-4" *ngFor="let activity of activities">
+        <app-activity-card
+          [activity]="activity"
+          (edit)="editActivity(activity)"
+          (delete)="deleteActivity(activity)"
+        ></app-activity-card>
+      </div>
+    </div>
+  
+    <button class="btn btn-primary mt-3" (click)="addActivity()">Añadir Actividad</button>
+  </div>
+  

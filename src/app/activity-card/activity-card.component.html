@@ -1,1 +1,12 @@
-<p>activity-card works!</p>
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ activity.type }}</h5>
+      <p class="card-text">Monitores:</p>
+      <ul>
+        <li *ngFor="let monitor of activity.monitors">{{ monitor.name }}</li>
+      </ul>
+      <button class="btn btn-warning" (click)="edit.emit()">Editar</button>
+      <button class="btn btn-danger" (click)="delete.emit()">Eliminar</button>
+    </div>
+  </div>
+  

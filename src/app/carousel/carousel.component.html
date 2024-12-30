@@ -1,1 +1,39 @@
-<p>carousel works!</p>
+<div id="carouselMonitors" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div
+        class="carousel-item"
+        *ngFor="let item of items; let i = index"
+        [class.active]="i === 0"
+      >
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">{{ item.email }}</p>
+            <p class="card-text">{{ item.phone }}</p>
+            <button class="btn btn-warning me-2" (click)="onEdit(item)">Editar</button>
+            <button class="btn btn-danger" (click)="onDelete(item)">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselMonitors"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselMonitors"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+  

@@ -1,1 +1,23 @@
-<p>monitors-page works!</p>
+<div class="container mt-4">
+    <h2>Gestión de Monitores</h2>
+  
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Buscar monitor"
+        [(ngModel)]="searchTerm"
+      />
+      <button class="btn btn-outline-secondary" (click)="searchMonitor()">Buscar</button>
+    </div>
+  
+    <app-carousel
+      [items]="filteredMonitors"
+      (edit)="editMonitor($event)"
+      (delete)="deleteMonitor($event)"
+    ></app-carousel>
+
+    <button class="btn btn-primary mt-3" (click)="addMonitor()">Añadir Monitor</button>
+  </div>
+  
+  
