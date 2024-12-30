@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivityCardComponent } from '../../activity-card/activity-card.component';
 
 @Component({
   selector: 'app-activities-page',
