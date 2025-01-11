@@ -1,14 +1,14 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CommonModule } from '@angular/common';
 import { ActivityCardComponent } from './activity-card.component';
-
+import { NgModule } from '@angular/core';
 describe('ActivityCardComponent', () => {
   let component: ActivityCardComponent;
   let fixture: ComponentFixture<ActivityCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ActivityCardComponent]
+      imports: [ActivityCardComponent, CommonModule]
     })
     .compileComponents();
     

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CarouselComponent } from "../../carousel/carousel.component";
-import { AddEditMonitorComponent } from "../../add-edit-monitor/add-edit-monitor.component";
+import { NgModule} from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-monitors-page',
   standalone: true,
-  imports: [CarouselComponent,AddEditMonitorComponent],
+  imports: [CarouselComponent, FormsModule],
   templateUrl: './monitors-page.component.html',
   styleUrl: './monitors-page.component.scss'
 })
