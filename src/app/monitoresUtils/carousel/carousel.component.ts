@@ -1,11 +1,12 @@
 import { Component, Input} from '@angular/core';
 import { Monitor } from '../../models/monitor';
 import { MonitorService } from '../../services/monitor.service';
+import { FormEditMonitorComponent } from "../form-edit-monitor/form-edit-monitor.component";
 // import { FormEditMonitorComponent } from "../form-edit-monitor/form-edit-monitor.component";
 
 @Component({
   selector: 'app-carousel',
-  imports: [],
+  imports: [FormEditMonitorComponent],
   // imports: [FormEditMonitorComponent],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss'

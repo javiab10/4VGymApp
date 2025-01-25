@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { CarouselComponent } from "../monitoresUtils/carousel/carousel.component";
-//import { FormAddMonitorComponent } from "../monitoresUtils/form-add-monitor/form-add-monitor.component";
+import { FormAddMonitorComponent } from "../monitoresUtils/form-add-monitor/form-add-monitor.component";
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-monitores',
-  imports: [CarouselComponent, ReactiveFormsModule],
+  imports: [CarouselComponent, ReactiveFormsModule, FormAddMonitorComponent],
   templateUrl: './monitores.component.html',
   styleUrl: './monitores.component.scss'
 })
