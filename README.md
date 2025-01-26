@@ -40,11 +40,11 @@ Este proyecto requiere los siguientes componentes:
      "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "src/styles.css"],
      "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
      ```
-5. **Agregar Angular Material
+5. **Agregar Angular Material**:
   ```
    ng add @angular/material (Sigue las instrucciones por defecto)
   ```
-6. Iniciar el servidor de desarrollo:
+6. **Iniciar el servidor de desarrollo**:
   ```
    ng serve ([localhost:4200](http://localhost:4200))
   ```
