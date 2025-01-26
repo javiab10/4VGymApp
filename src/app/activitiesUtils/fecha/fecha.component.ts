@@ -1,9 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-// import { FormatDatePipe } from "../../pipes/format-date.pipe";
+import { FormatDatePipe } from "../../pipes/format-date.pipe";
 
 @Component({
   selector: 'app-fecha',
-  // imports: [],
+  imports: [FormatDatePipe],
   templateUrl: './fecha.component.html',
   styleUrl: './fecha.component.scss'
 })
