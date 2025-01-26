@@ -25,27 +25,27 @@ Este proyecto requiere los siguientes componentes:
    cd <NOMBRE_DEL_DIRECTORIO>
 
 2. **Actualizar dependencias**:
-  ```
+  ```bash
    npm update
    npm install
   ```
 
 3. **Instalar Bootstrap**:
-  ```
+  ```bash
    npm install bootstrap
   ```
 
    - Asegúrate de añadir las rutas de Bootstrap al archivo angular.json:
-     ```
+     ```bash
      "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "src/styles.css"],
      "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
      ```
 5. **Agregar Angular Material**:
-  ```
+  ```bash
    ng add @angular/material (Sigue las instrucciones por defecto)
   ```
 6. **Iniciar el servidor de desarrollo**:
-  ```
+  ```bash
    ng serve ([localhost:4200](http://localhost:4200))
   ```
 
