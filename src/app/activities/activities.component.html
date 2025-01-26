@@ -1,1 +1,31 @@
-<p>activities works!</p>
+<div class="container-fluid p-5 m-2">
+    <div class="row">
+        <!-- Sidebar para el calendario -->
+        <div class="col-md-3 col-12 position-sticky top-0 bg-light p-4 shadow-sm rounded">
+            <h5 class="mb-3">Selecciona una fecha</h5>
+            
+            <!-- Calendario Completo -->
+            <!-- <mat-calendar [(selected)]="date" ngSkipHydration class="custom-calendar"></mat-calendar> -->
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="col-md-9 col-12">
+            <div class="container">
+                <!-- FECHA -->
+                <!-- <app-fecha [date]="date" (dateChange)="updateDate($event)"></app-fecha> -->
+                <!-- FECHA -->
+
+                <!-- ACTIVIDADES -->
+                <!-- <app-activity-card [date]="date" (dateChange)="updateDate($event)" [startingTime]="'10:00'" [endingTime]="'11:30'"></app-activity-card> -->
+                <!-- <app-activity-card [date]="date" (dateChange)="updateDate($event)" [startingTime]="'13:30'" [endingTime]="'15:00'"></app-activity-card> -->
+                <!-- <app-activity-card [date]="date" (dateChange)="updateDate($event)" [startingTime]="'17:30'" [endingTime]="'19:00'"></app-activity-card> -->
+                <!-- ACTIVIDADES -->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--MODAL AÑADIR ACTIVIDAD-->
+<!-- <app-modal-add-activity [date]="date" [startingTime]="startingTime" [endingTime]="endingTime" (activityAddedEmiter)="onActivityAdded()" /> -->
+
