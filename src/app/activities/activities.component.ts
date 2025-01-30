@@ -19,11 +19,19 @@ export class ActivitiesComponent {
 
   date: any = new Date();
 
+  startingTime: string = '';
+  endingTime: string = '';
+
   ngOnInit(){
     
   }
    
   updateDate(newDate: any) {
     this.date = newDate;
+  }
+
+  onTimesRecived(times: {startingTime: string, endingTime: string}) {
+    this.startingTime = times.startingTime;
+    this.endingTime = times.endingTime;
   }
 }

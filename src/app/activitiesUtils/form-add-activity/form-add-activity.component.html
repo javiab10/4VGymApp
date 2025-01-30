@@ -2,7 +2,7 @@
     <div class="row justify-content-center">
         <form class="form w-75" [formGroup]="activityAddForm" (ngSubmit)="onSubmit()">
             <select formControlName="activityType" class="form-select mt-3 mb-5">
-                <option selected disabled>Actividad</option>{{startingTime}}
+                <option selected disabled>Actividad</option>
                 @for(actType of activityTypes; track actType.id) {
                     <option>{{actType.name}}</option>
                 }

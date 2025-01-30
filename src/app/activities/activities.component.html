@@ -16,9 +16,9 @@
                 <!-- FECHA -->
 
                 <!-- ACTIVIDADES -->
-                <app-activity-card [date]="date" (dateChange)="updateDate($event)" [startingTime]="'10:00'" [endingTime]="'11:30'"></app-activity-card>
-                <app-activity-card [date]="date" (dateChange)="updateDate($event)" [startingTime]="'13:30'" [endingTime]="'15:00'"></app-activity-card>
-                <app-activity-card [date]="date" (dateChange)="updateDate($event)" [startingTime]="'17:30'" [endingTime]="'19:00'"></app-activity-card>
+                <app-activity-card [date]="date" (dateChange)="updateDate($event)" [startingTime]="'10:00'" [endingTime]="'11:30'" (timeEmiter)="onTimesRecived($event)"></app-activity-card>
+                <app-activity-card [date]="date" (dateChange)="updateDate($event)" [startingTime]="'13:30'" [endingTime]="'15:00'" (timeEmiter)="onTimesRecived($event)"></app-activity-card>
+                <app-activity-card [date]="date" (dateChange)="updateDate($event)" [startingTime]="'17:30'" [endingTime]="'19:00'" (timeEmiter)="onTimesRecived($event)"></app-activity-card>
                 <!-- ACTIVIDADES -->
             </div>
         </div>
@@ -26,6 +26,7 @@
 
 </div>
 
-<!--MODAL AÑADIR ACTIVIDAD-->
-<!-- <app-modal-add-activity [date]="date" [startingTime]="startingTime" [endingTime]="endingTime" (activityAddedEmiter)="onActivityAdded()" /> -->
+
+
+
 

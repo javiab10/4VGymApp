@@ -17,7 +17,6 @@ export class ModalAddActivityComponent {
   @Output() activityAddedEmiter = new EventEmitter<void>();
 
   ngOnInit(): void {
-    console.log('idModal: ' + this.idModal);
     console.log('startingTime: ' + this.startingTime);
   }
 
