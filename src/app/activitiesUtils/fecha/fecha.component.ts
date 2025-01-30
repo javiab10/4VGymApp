@@ -16,18 +16,14 @@ export class FechaComponent {
     
   }
   prevDate(){
-    this.date = new Date(this.date);
-    this.date = new Date(this.date.getTime());
-    this.date.setDate(this.date.getDate()-1);
+    const newDate = new Date(this.date.getTime() - 86400000);
 
-    this.dateChange.emit(this.date);
+    this.dateChange.emit(newDate);
   }
 
   nextDate(){
-    this.date = new Date(this.date);
-    this.date = new Date(this.date.getTime());
-    this.date.setDate(this.date.getDate()+1);
+    const newDate = new Date(this.date.getTime() + 86400000);
 
-    this.dateChange.emit(this.date);
+    this.dateChange.emit(newDate);
   }
 }

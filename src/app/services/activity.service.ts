@@ -22,7 +22,7 @@ export class ActivityService {
 
   getActivityByDateAndStartingTime(date: Date, startingTime: string){
     for (let act of this.activities) {
-      if (act.date.getDate() == date.getDate() && act.startingTime == startingTime) {
+      if (act.date.getDate() == date.getDate() && act.date.getMonth() == date.getMonth() && act.date.getFullYear() == date.getFullYear() && act.startingTime == startingTime) {
         return act;
       }
     }
